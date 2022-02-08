@@ -18,4 +18,14 @@ function india(){
 // Function Invocation/Call/Execution
 india()
 america()
-```
+
+// Using the 'arguments' reserved variable
+function marry(person1, person2){
+	console.log(arguments)
+	// Will print '{ '0': 'Olga', '1': 'Tafuku' }'
+    console.log(Array.from(arguments))
+	const statement = `${person1} and ${person2} are finally tying the knot`;
+	console.log(statement) 
+	// Will print 'Olga and Tafuku are finally tying the knot'
+}
+marry('Olga', 'Tafuku');
